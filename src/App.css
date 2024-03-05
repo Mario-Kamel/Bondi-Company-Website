@@ -36,7 +36,7 @@ nav {
   margin-right: 3rem;
   text-decoration: none;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .primary-button {
@@ -85,7 +85,7 @@ nav {
 }
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
-  color: #4c4c4c;
+  color: #2c3f66;
   /* line-height: 5rem; */
   max-width: 600px;
 }
@@ -97,7 +97,7 @@ nav {
 }
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: #051664;
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -142,7 +142,7 @@ nav {
 .primary-subheading {
   font-weight: 700;
   color: #fe9e0d;
-  font-size: 1.15rem;
+  font-size: 4rem;
 }
 .about-buttons-container {
   margin-top: 2rem;
@@ -201,7 +201,8 @@ nav {
   margin-top: 10rem;
 }
 .footer-logo-container {
-  max-width: 110px;
+  max-width: 2px;
+  max-height: 2px;
 }
 .footer-icons {
   margin-top: 2.5rem;
@@ -229,6 +230,12 @@ nav {
   font-weight: 600;
   color: #4c4c4c;
   cursor: pointer;
+}
+.logo-image {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 150px;
 }
 .testimonial-section-bottom {
   margin-top: 2rem;
@@ -321,7 +328,8 @@ nav {
 }
 @media (max-width: 800px) {
   .nav-logo-container {
-    max-width: 140px;
+    width: 100%;
+    max-width: 10px;
   }
   .navbar-links-container {
     display: none;

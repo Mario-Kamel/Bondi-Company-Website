@@ -15,15 +15,10 @@ const About = () => {
       <div className="about-section-text-container">
         <p className="primary-subheading">About</p>
         <h1 className="primary-heading">
-          Food Is An Important Part Of A Balanced Diet
+        Discover how Bondi brings the flavors of Georgian cuisine to the Gulf region
         </h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
-        </p>
-        <p className="primary-text">
-          Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-          facilisis at fringilla quam.
+        Explore the rich tapestry of Georgian culinary traditions as Bondi brings you a delightful array of handcrafted sauces, tantalizing jams, and exquisite Halal wine. From the sun-kissed vineyards to your table, savor the essence of Georgia’s vibrant flavors right here in the heart of the Gulf. Whether you’re a connoisseur or a curious food enthusiast, Bondi invites you to experience the magic of Georgian cuisine—one delectable bite at a time. 🍯🍷🌟
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
