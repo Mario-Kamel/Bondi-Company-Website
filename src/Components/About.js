@@ -1,18 +1,16 @@
 import React from "react";
-import AboutBackground from "../Assets/about-background.png";
-import AboutBackgroundImage from "../Assets/about_3_products.png";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 
 const About = () => {
   return (
     <div className="about-section-container">
       <div className="about-background-image-container">
-        <img src={AboutBackground} alt="" />
+        <img src="./about-background.png" alt="" />
       </div>
       <div className="about-section-image-container">
-        <img src={AboutBackgroundImage} alt="" />
+        <img src="./about_3_products.png" alt="" />
       </div>
-      <div className="about-section-text-container">
+      <div className="about-section-text-container"> 
         <p className="primary-subheading">About</p>
         <h1 className="primary-heading">
         Discover how Bondi brings the flavors of Georgian cuisine to the Gulf region

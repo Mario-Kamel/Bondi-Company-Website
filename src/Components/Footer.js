@@ -1,22 +1,19 @@
 import React from "react";
-import Logo from "../Assets/Logo.svg";
-import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
-import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import { Instagram } from "@mui/icons-material";
 
 const Footer = () => {
   return (
     <div className="footer-wrapper">
       <div className="footer-section-one">
         <div className="footer-logo-container">
-          <img src={Logo} alt="" />
+          <img src="./Logo.png" alt="" />
         </div>
         <div className="footer-icons">
-          <BsTwitter />
           <SiLinkedin />
-          <BsYoutube />
           <FaFacebookF />
+          <Instagram />
         </div>
       </div>
       <div className="footer-section-two">
@@ -28,11 +25,11 @@ const Footer = () => {
           <span>Testimonials</span>
           <span>Work</span>
         </div> */}
-        <div className="footer-section-columns">
+        <div className="footer-section-columns" id="contact">
           <span>(+2)0123-456-7890</span>
-          <a href="contact@bondi.com">contact@bondi.com</a>
-          <a href="medhat@bondi.com">medhat@bondi.com</a>
-          <a href="mahmoud@bondi.com">mahmoud@bondi.com</a>
+          <a href="mailto:contact@bondi.com">contact@bondi.com</a>
+          <a href="mailto:medhat@bondi.com">medhat@bondi.com</a>
+          <a href="mailto:mahmoud@bondi.com">mahmoud@bondi.com</a>
         </div>
         <div className="footer-section-columns">
           <span>Terms & Conditions</span>
