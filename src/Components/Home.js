@@ -16,7 +16,9 @@ const Home = () => {
           Georgian delights. Sauces, jams, and Halal wine. Capturing tradition and taste. 
           </p>
           <button className="secondary-button">
-            View Products <FiArrowRight />{" "}
+            <a href="/products">
+              View Products <FiArrowRight />
+            </a>
           </button>
         </div>
         <div className="home-image-section">
