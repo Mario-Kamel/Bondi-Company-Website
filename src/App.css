@@ -70,7 +70,8 @@ nav {
   top: -100px;
   right: -170px;
   z-index: -2;
-  max-width: 700px;
+  max-width: 100%;
+  height: auto;
 }
 .home-image-section {
   max-width: 600px;
@@ -241,7 +242,9 @@ nav {
   display: inline-block;
   width: 100%;
   height: auto;
+  margin-left: 10px;
   max-width: 150px;
+  min-width: 100px;
 }
 .testimonial-section-bottom {
   margin-top: 2rem;
@@ -389,6 +392,7 @@ nav {
   }
   .primary-subheading {
     text-align: center;
+    color: #051664;
   }
   .watch-video-button {
     margin-left: 0rem !important;
@@ -423,6 +427,7 @@ nav {
   }
   .footer-wrapper {
     flex-direction: column;
+    align-items: center;
   }
   .footer-section-two {
     flex-direction: column;
@@ -438,7 +443,7 @@ nav {
 @media (max-width: 600px) {
   .home-bannerImage-container,
   .about-background-image-container {
-    display: none;
+    max-width: 300px;
   }
 }
 
@@ -484,6 +489,11 @@ nav {
 @media screen and (max-width: 768px) {
   .product {
     flex: 0 0 100%;
+  }
+
+  .footer-wrapper{
+    flex-direction: column;
+    align-items: center;
   }
   
 }

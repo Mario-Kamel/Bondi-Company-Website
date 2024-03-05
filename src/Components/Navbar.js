@@ -10,7 +10,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 
 const Navbar = () => {
@@ -19,6 +19,7 @@ const Navbar = () => {
     {
       text: "Home",
       icon: <HomeIcon />,
+      url: "/",
     },
     // {
     //   text: "About",
@@ -26,11 +27,13 @@ const Navbar = () => {
     // },
     {
       text: "Products",
-      icon: <CommentRoundedIcon />,
+      icon: <ShoppingCartIcon />,
+      url: "/products",
     },
     {
       text: "Contact",
       icon: <PhoneRoundedIcon />,
+      url: "#contact",
     },
   ];
   return (
@@ -57,7 +60,7 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton>
+                <ListItemButton LinkComponent={'a'} href={item.url}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
