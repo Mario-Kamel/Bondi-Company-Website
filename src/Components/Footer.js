@@ -1,5 +1,5 @@
 import React from "react";
-import { SiLinkedin } from "react-icons/si";
+import { SiWhatsapp } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa";
 import { Instagram } from "@mui/icons-material";
 
@@ -11,7 +11,9 @@ const Footer = () => {
           <img src="./Logo.png" alt="" />
         </div>
         <div className="footer-icons">
-          <SiLinkedin />
+          <a href="tel:+201280991777">
+            <SiWhatsapp href="tel:+201280991777"/>
+          </a>
           <FaFacebookF />
           <Instagram />
         </div>
@@ -26,9 +28,9 @@ const Footer = () => {
           <span>Work</span>
         </div> */}
         <div className="footer-section-columns" id="contact">
-          <span>(+2)0123-456-7890</span>
+          <span>(+2)0128-099-1777</span>
           <a href="mailto:contact@bondi.com">contact@bondi.com</a>
-          <a href="mailto:medhat@bondi.com">medhat@bondi.com</a>
+          <a href="mailto:medhat@bondi.com">medhatbekhit700@gmail.com</a>
           <a href="mailto:mahmoud@bondi.com">mahmoud@bondi.com</a>
         </div>
         <div className="footer-section-columns">
