@@ -61,9 +61,10 @@ const Navbar = ({language, setLanguage}) => {
         <a href="/products">{strings.products}</a>
         <a href="#contact">{strings.contact}</a>
         <button className="primary-button">{strings.bookNow}</button>
-        <button onClick={() => onLanguageChange()}>{strings.getLanguage() === "en" ? "العريية" : "English"}</button>
+        <button className="language-button" onClick={() => onLanguageChange()}>{strings.getLanguage() === "en" ? "العريية" : "English"}</button>
       </div>
       <div className="navbar-menu-container">
+        <button className="language-button" onClick={() => onLanguageChange()}>{strings.getLanguage() === "en" ? "العريية" : "English"}</button>
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
