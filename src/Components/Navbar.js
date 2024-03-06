@@ -12,12 +12,22 @@ import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+import strings from "../Assets/localization";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const onLanguageChange = () => {
+    if (strings.getLanguage() === "en") {
+      strings.setLanguage("ar");
+    }
+    if (strings.getLanguage() === "ar") {
+      strings.setLanguage("en");
+    
+    }
+  };
   const menuOptions = [
     {
-      text: "Home",
+      text: strings.home,
       icon: <HomeIcon />,
       url: "/",
     },
@@ -26,12 +36,12 @@ const Navbar = () => {
     //   icon: <InfoIcon />,
     // },
     {
-      text: "Products",
+      text: strings.products,
       icon: <ShoppingCartIcon />,
       url: "/products",
     },
     {
-      text: "Contact",
+      text: strings.contact,
       icon: <PhoneRoundedIcon />,
       url: "#contact",
     },
@@ -44,10 +54,11 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar-links-container">
-        <a href="/">Home</a>
-        <a href="/products">Products</a>
-        <a href="#contact">Contact</a>
-        <button className="primary-button">Bookings Now</button>
+        <a href="/">{strings.home}</a>
+        <a href="/products">{strings.products}</a>
+        <a href="#contact">{strings.contact}</a>
+        <button className="primary-button">{strings.bookNow}</button>
+        <span onClick={onLanguageChange}>{strings.getLanguage() === "en" ? "العريية" : "English"}</span>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

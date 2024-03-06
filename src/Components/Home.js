@@ -1,5 +1,6 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
+import strings from "../Assets/localization";
 
 const Home = () => {
   return (
@@ -10,14 +11,14 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Finest Georgian Food Products
+            {strings.homeBannerText}
           </h1>
           <p className="primary-text">
-          Georgian delights. Sauces, jams, and Halal wine. Capturing tradition and taste. 
+          {strings.homeBannerSubText} 
           </p>
           <button className="secondary-button">
             <a href="/products">
-              View Products <FiArrowRight />
+              {strings.viewProducts} <FiArrowRight />
             </a>
           </button>
         </div>

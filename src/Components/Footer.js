@@ -2,6 +2,7 @@ import React from "react";
 import { SiWhatsapp } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa";
 import { Instagram } from "@mui/icons-material";
+import strings from "../Assets/localization";
 
 const Footer = () => {
   return (
@@ -34,8 +35,8 @@ const Footer = () => {
           <a href="mailto:mahmoud@bondi.com">mahmoud@bondi.com</a>
         </div>
         <div className="footer-section-columns">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+          <span>{strings.terms}</span>
+          <span>{strings.privacy}</span>
         </div>
       </div>
     </div>

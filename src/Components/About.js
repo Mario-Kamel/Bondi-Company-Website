@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFillPlayCircleFill } from "react-icons/bs";
-
+import strings from "../Assets/localization";
 const About = () => {
   return (
     <div className="about-section-container">
@@ -11,17 +11,17 @@ const About = () => {
         <img src="./about_3_products.png" alt="" />
       </div>
       <div className="about-section-text-container"> 
-        <p className="primary-subheading">About</p>
+        <p className="primary-subheading">{strings.about}</p>
         <h1 className="primary-heading">
-        Discover how Bondi brings the flavors of Georgian cuisine to the Gulf region
+          {strings.aboutHeading}
         </h1>
         <p className="primary-text">
-        Explore the rich tapestry of Georgian culinary traditions as Bondi brings you a delightful array of handcrafted sauces, tantalizing jams, and exquisite Halal wine. From the sun-kissed vineyards to your table, savor the essence of Georgia’s vibrant flavors right here in the heart of the Gulf. Whether you’re a connoisseur or a curious food enthusiast, Bondi invites you to experience the magic of Georgian cuisine—one delectable bite at a time. 🍯🍷🌟
+          {strings.aboutText}
         </p>
         <div className="about-buttons-container">
-          <button className="secondary-button">Learn More</button>
+          <button className="secondary-button">{strings.learnMore}</button>
           <button className="watch-video-button">
-            <BsFillPlayCircleFill /> Watch Video
+            <BsFillPlayCircleFill /> {strings.watchVideo}
           </button>
         </div>
       </div>
