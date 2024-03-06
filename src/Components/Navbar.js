@@ -14,15 +14,18 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import strings from "../Assets/localization";
 
-const Navbar = () => {
+const Navbar = ({language, setLanguage}) => {
   const [openMenu, setOpenMenu] = useState(false);
   const onLanguageChange = () => {
     if (strings.getLanguage() === "en") {
       strings.setLanguage("ar");
+      setLanguage("ar");
+      return;
     }
-    if (strings.getLanguage() === "ar") {
+    else if (strings.getLanguage() === "ar") {
       strings.setLanguage("en");
-    
+      setLanguage("en");
+      return;
     }
   };
   const menuOptions = [
@@ -58,7 +61,7 @@ const Navbar = () => {
         <a href="/products">{strings.products}</a>
         <a href="#contact">{strings.contact}</a>
         <button className="primary-button">{strings.bookNow}</button>
-        <span onClick={onLanguageChange}>{strings.getLanguage() === "en" ? "العريية" : "English"}</span>
+        <button onClick={() => onLanguageChange()}>{strings.getLanguage() === "en" ? "العريية" : "English"}</button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
