@@ -20,11 +20,13 @@ const Navbar = ({language, setLanguage}) => {
     if (strings.getLanguage() === "en") {
       strings.setLanguage("ar");
       setLanguage("ar");
+      localStorage.setItem("language", "ar");
       return;
     }
     else if (strings.getLanguage() === "ar") {
       strings.setLanguage("en");
       setLanguage("en");
+      localStorage.setItem("language", "en");
       return;
     }
   };
