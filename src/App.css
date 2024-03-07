@@ -406,6 +406,9 @@ nav {
     margin-top: 4rem;
   }
   .secondary-button {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     font-size: 1rem;
     padding: 0.8rem 2rem;
     cursor: pointer;
