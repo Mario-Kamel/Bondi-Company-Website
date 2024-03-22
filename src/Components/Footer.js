@@ -30,9 +30,7 @@ const Footer = () => {
         </div> */}
         <div className="footer-section-columns" id="contact">
           <span>(+2)0128-099-1777</span>
-          <a href="mailto:contact@bondi.com">contact@bondi.com</a>
-          <a href="mailto:medhat@bondi.com">medhatbekhit700@gmail.com</a>
-          <a href="mailto:mahmoud@bondi.com">mahmoud@bondi.com</a>
+          <a href="mailto:contact@bondi-ksa.com">contact@bondi-ksa.com</a>
         </div>
         <div className="footer-section-columns">
           <span>{strings.terms}</span>
